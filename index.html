@@ -5,62 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adrieana Godinez #17</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Open+Sans&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #b53d24;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       position: relative;
     }
+
     header h1 {
       font-size: 3rem;
       margin: 0;
+      font-family: 'Russo One', sans-serif;
+      letter-spacing: 1px;
     }
+
     header h2 {
-      font-size: 2rem;
-      margin: 0.5rem 0 0 0;
+      font-size: 1.6rem;
+      margin: 0.8rem 0 0 0;
+      font-weight: 400;
     }
+
     .profile-img {
       width: 100%;
       max-height: 450px;
       object-fit: cover;
+      animation: fadeIn 1.5s ease-in;
     }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
     .info {
       padding: 2rem 1rem;
       text-align: center;
+      animation: fadeInUp 1s ease forwards;
     }
+
     .info p {
       margin: 0.5rem 0;
       font-size: 1.1rem;
     }
+
     .team-section {
       background-color: #b53d24;
       color: white;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       text-align: center;
+      animation: fadeIn 1.5s ease-in;
     }
+
     .team-section h3 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin: 0.5rem 0;
+      font-family: 'Russo One', sans-serif;
     }
+
     .contact {
       padding: 2rem 1rem;
       text-align: center;
     }
+
     .contact p {
-      margin: 0.3rem 0;
+      margin: 0.5rem 0;
+      font-size: 1.05rem;
     }
+
     .contact a {
       color: #b53d24;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    .contact a:hover {
+      color: #333;
+    }
+
     footer {
       background-color: #eee;
       text-align: center;
@@ -69,10 +101,23 @@
       font-size: 0.9rem;
       color: #555;
     }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 600px) {
+      .info, .contact {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 <body>
-  <img src="images/agTrophy.png" alt="Adrieana Godinez holding trophy" class="profile-img">
+
+  <img src="AdrieanaRecruitForm.png" alt="Adrieana Godinez holding trophy" class="profile-img">
 
   <header>
     <h1>Adrieana Godinez #17</h1>
@@ -80,7 +125,7 @@
   </header>
 
   <section class="info">
-    <p><strong>Graduation Year:</strong> 2027</p>
+    <p><strong>Graduation:</strong> 2027</p>
     <p><strong>GPA:</strong> 3.8</p>
     <p><strong>Bats/Throws:</strong> Right/Right</p>
     <p><strong>Height:</strong> 5'4"</p>
@@ -100,5 +145,6 @@
   <footer>
     &copy; 2025 Adrieana Godinez Softball Profile
   </footer>
+
 </body>
 </html>
